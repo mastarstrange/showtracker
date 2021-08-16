@@ -85,6 +85,12 @@ $(document).on("click touchend", ".signupswp", function () {
   return false;
 });
 
+$('.filtertag').on('click', function() {
+  $('a.filtertag').removeClass('active');
+  console.log("test");
+  $(this).addClass('active');
+});
+
 //? Genre filtering
 //? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 $(document).ready(function(){

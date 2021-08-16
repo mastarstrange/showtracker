@@ -60,6 +60,21 @@ body{
     cursor: pointer;
     text-align: center;
 }
+
+.filtertag {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.filtertag:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.filtertag.active {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    background-color: var(--black-color);
+    transition: all 0.4s ease-in-out;
+}
+
 /** #################################################################################
 /** Nav Bar setup
 /** ################################################################################# */
