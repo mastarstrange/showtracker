@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--# ==================================================================================
+<!--// Name: showtvackr
+<!--// URL: Not Yet
+<!--// Author: mastarstrange
+<!--# ================================================================================== -->
+<!--? Use VS Code with better comments plugin for better viewing experience -->
+
+<head>
+
+  <title>Show Tracker</title>
+
+<!--? Metadata
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+<!--? Favicon
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <link href="assets/img/logo.jpg" rel="icon">
+    
+<!--? Vendor CSS Files
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/jquery/listnav/listnav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--// Add icon library -->
+    <link href="assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+<!--? Main CSS File
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!--* #################################################################################
+<!--# Navbar setup
+<!--* ################################################################################# -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Showtvackr
+    </a>
+    <div class="nav nav-pills collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li><a class="homeswp" href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a class="addswp" href="#"><i class="fa fa-calendar-plus"></i> Add</a></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <li><a class="loginswp" href="#" ><i class="fa fa-pen-square"></i> Signup</a></li>
+        <li><a class="signupswp" href="#"><i class="fa fa-user-circle"></i> Login</a></li>
+      </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+<!--* #################################################################################
+<!--# Home page Setup
+<!--* ################################################################################# -->
+
+<div class="home container-lg">
+    <div class="jumbotron">
+<!--? List nav will be prepended here
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+<!--? Taglist
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <div class="container-fluid taglist">
+          <a data-filter="all" href="#" class="badge badge-primary filtertag">All</a>
+          <a data-filter="act" href="#" class="badge badge-primary filtertag">Action</a>
+          <a data-filter="adv" href="#" class="badge badge-primary filtertag">Adventure</a>
+          <a data-filter="anim" href="#" class="badge badge-primary filtertag">Animation</a>
+          <a data-filter="chil" href="#" class="badge badge-primary filtertag">Children</a>
+          <a data-filter="com" href="#" class="badge badge-primary filtertag">Comedy</a>
+          <a data-filter="crim" href="#" class="badge badge-primary filtertag">Crime</a>
+          <a data-filter="doc" href="#" class="badge badge-primary filtertag">Documentary</a>
+          <a data-filter="dra" href="#" class="badge badge-primary filtertag">Drama</a>
+          <a data-filter="fan" href="#" class="badge badge-primary filtertag">Fantasy</a>
+          <a data-filter="hor" href="#" class="badge badge-primary filtertag">Horror</a>
+          <a data-filter="mys" href="#" class="badge badge-primary filtertag">Mystery</a>
+          <a data-filter="rom" href="#" class="badge badge-primary filtertag">Romance</a>
+          <a data-filter="scifi" href="#" class="badge badge-primary filtertag">Sci-Fi</a>
+          <a data-filter="susp" href="#" class="badge badge-primary filtertag">Suspence</a>
+          <a data-filter="thri" href="#" class="badge badge-primary filtertag">Thriller</a>
+        </div>
+    </div>
+<!--? Show List Grid with some additions on top
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <div class="container card">
+        <div class="card-header">
+          <h4 class="mr-auto">Top Shows</h4>
+          <input class="" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="container-fluid showlist filter-container row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-1">
+            <!--// 01 -->
+            <div class="card col filtr-item dra com thri crim susp">
+                <div class="postercontainer">
+                    <img class="card-img img-responsive" src="assets/img/shposters/brbad.jpg" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Breaking Bad</h4>
+                    <p class="card-text">Episodes: 62</p>
+                    <a href="#" class="btn btn-info showdetail">See Details</a>
+                </div>
+            </div>
+            <!--// 02 -->
+            <div class="col card filtr-item act adv thri susp fan dra">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/got.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Game of Thrones</h4>
+                <p class="card-text">Episodes: 84</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 03 -->
+            <div class="col card filtr-item anim com scifi adv">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/r&m.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Rick and Morty</h4>
+                <p class="card-text">Still Airing</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 04 -->
+            <div class="col card filtr-item anim chil com fan adv">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/tlab.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">The Last Airbender</h4>
+                <p class="card-text">Episodes: 61</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 05 -->
+            <div class="col card filtr-item mys com dra crim thri adv">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/sherlock.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Sherlock</h4>
+                <p class="card-text">Returning Series</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 06 -->
+            <div class="col card filtr-item com rom">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/friends.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Friends</h4>
+                <p class="card-text">Episodes: 236</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 07 -->
+            <div class="col card filtr-item scifi crim act fan">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/loki.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Loki</h4>
+                <p class="card-text">Returning Series</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 08 -->
+            <div class="col card filtr-item hor scifi dra thri">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/st.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Stranger Things</h4>
+                <p class="card-text">Returning Series</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 09 -->
+            <div class="col card filtr-item com doc rom">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/office.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">The Office</h4>
+                <p class="card-text">Episodes: 201</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 10 -->
+            <div class="col card filtr-item dra scifi adv">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/manda.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">The Mandalorian</h4>
+                <p class="card-text">Returning Series</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 11 -->
+            <div class="col card filtr-item act dra thri scifi">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/ww.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Westworld</h4>
+                <p class="card-text">Returning Series</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+            <!--// 12 -->
+            <div class="col card filtr-item thri dra scifi mys">
+              <div class="postercontainer">
+                <img class="card-img img-responsive" src="assets/img/shposters/dark.jpg" alt="Card image">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dark</h4>
+                <p class="card-text">Episodes: 26</p>
+                <a href="#" class="btn btn-info showdetail">See Details</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--* #################################################################################
+<!--# Add page Setup
+<!--* ################################################################################# -->
+
+<div class="container addpg inActive" id="addform">
+      <div class="modal-header">
+        <h4 class="modal-title">Add TV Show</h4>
+      </div>
+      <div class="input-group mb-3 modal-body">
+        <input type="text" class="form-control" id="addshow" placeholder="Enter TV Show Name">
+        <div class="input-group-append">
+          <button class="btn btn-primary" id="addshowbtn" type="submit"><i class="fa fa-download"></i> Add</button>
+        </div>
+    </div>
+</div>
+
+<!--* #################################################################################
+<!--# Details page Setup
+<!--* ################################################################################# -->
+<div class="detpg container inActive">
+    <div class="descont">
+      <div class="modal-header">
+        <h4 class="modal-title">Details</h4>
+      </div>
+      <div class="modal-body row">
+        <div class="card col-sm-5 col-md-4 col-6 bg-light">
+          <div class="postercontainer">
+              <img class="card-img img-responsive" id="detpgimg" src="assets/img/shposters/dark.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+              <a href="#" class="btn btn-primary signupswp"><i class="fa fa-key"></i> &nbsp; Login to Subscribe</a>
+          </div>
+        </div>
+        <div class="col-sm-7 col-6 text-left" >
+          <h4 id="detpgtitle">Show Title</h4>
+          <p id="detpgcal"><i class="fa fa-calendar"></i> &nbsp;<b>Sunday <u>9.00&nbsp;p.m.</u> on&nbsp;HBO</b></p>
+          <p id="detpgplot">Some quick plot details, no spoilers please. There is something you can know... In Game of Thrones Everybody dies... Yeah that's kind of true.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      The <strong>next episode</strong> is in sometime. Beware, you might get addicted. <i class="fa fa-smile-wink"></i> &nbsp;
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="epicont container card text-left">
+            <div class="card-header">Episodes</div>
+            <div class=" container">
+              <h5 class="card-text">Some episode title</h5>
+              <p class="epino">episode numbers</p>
+              <p class="card-text"><i class="fa fa-clock"></i> &nbsp;Time Stamp Formatting</p>
+              <p class="card-text">Some quick plot details, no spoilers please.</p>
+            </div>
+            <div class="container">
+              <h5 class="card-text">Some episode title</h5>
+              <p class="epino">episode numbers</p>
+              <p class="card-text">Time Stamp Formatting</p>
+              <p class="card-text">Some quick plot details, no spoilers please.</p>
+            </div>
+            <div class="container">
+              <h5 class="card-text">Some episode title</h5>
+              <p class="epino">episode numbers</p>
+              <p class="card-text">Time Stamp Formatting</p>
+              <p class="card-text">Some quick plot details, no spoilers please.</p>
+            </div>
+            <div class="container">
+              <h5 class="card-text">Some episode title</h5>
+              <p class="epino">episode numbers</p>
+              <p class="card-text">Time Stamp Formatting</p>
+              <p class="card-text">Some quick plot details, no spoilers please.</p>
+            </div>
+    </div>
+</div>
+
+
+<!--* #################################################################################
+<!--# Login and Signup Page setup
+<!--* ################################################################################# -->
+
+<div class="userform">
+    <form class="form" method="post" action="#">
+
+  <!--? Signup Section 
+  <!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+      <div class="signup inActive">
+          <div class="headline">
+            <h1>Sign Up</h1>
+          </div>
+          <!-- The signup name input is here -->
+          <div class="inputwall">
+            <input type="text" placeholder="Name" required="" id="newname" onfocus="nameFocus()" onblur="nameBlur()">
+              <ul class="nameval inActive list-group">
+                <li class="list-group-item list-group-item-primary">Your name should include,</li>
+                <li id="nv5char" class="list-group-item list-group-item-info">More than 5 characters</li>
+                <li id="nvnonum" class="list-group-item list-group-item-info">No Numbers</li>
+                <li id="nvnosym" class="list-group-item list-group-item-info">No Symbols</li>
+              </ul>
+              <ul class="namereq inActive list-group">
+                <li class="list-group-item list-group-item-danger">This is required</li>
+              </ul>
+              <ul class="namecor inActive list-group">
+                <li class="list-group-item list-group-item-danger">This doesn't meet the conditions</li>
+              </ul>
+            </div>
+          <!-- The signup email input is here -->            
+          <div class="">
+              <input type="email" placeholder="Email" required="" id="newmail"  onblur="emailBlur()">
+              <ul class="emailreq inActive list-group">
+                <li class="list-group-item list-group-item-danger">Enter a valid email</li>
+              </ul>
+          </div>
+          <!-- The signup password input is here -->
+          <div class="">
+              <input type="password" placeholder="Password" required="" id="newpass" onfocus="passFocus()" onblur="passBlur()">
+              <!-- The password conditions list is here -->
+              <ul class="passval inActive list-group">
+                <li class="list-group-item list-group-item-primary">Your Password must include,</li>
+                <li id="pvcap" class="list-group-item list-group-item-info">at least A Capital letter</li>
+                <li id="pvsma" class="list-group-item list-group-item-info">at least A Small letter</li>
+                <li id="pvnum" class="list-group-item list-group-item-info">at least A Number</li>
+                <li id="pvsym" class="list-group-item list-group-item-info">at least A Symbol</li>
+                <li id="pveig" class="list-group-item list-group-item-info">Exactly 8 characters</li>
+              </ul>
+              <ul class="passreq inActive list-group">
+                <li class="list-group-item list-group-item-danger">A Password is required</li>
+              </ul>
+              <ul class="passcor inActive list-group">
+                <li class="list-group-item list-group-item-danger">This doesn't meet the conditions</li>
+              </ul>
+          </div>
+          <!-- Some Text and stuff -->
+          <div class="account-exist">
+            By clicking the Sign up, you agree to our <a href="#" id="sapice">terms & conditions</a> and <a href="#" id="sapice">privacy policy</a>.
+          </div>
+          <!-- The signup submit button is here -->
+          <button type="submit" class="btn" id="signupbtn"><i class="fa fa-pen-square"></i> &nbsp;SIGN UP</button>
+
+          <div class="account-exist">
+            Already have an account? <a href="#" class="signupswp">Log in Here!</a>
+          </div>
+
+      </div>
+
+  <!--? Login Section
+  <!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+      <div class="login inActive">
+
+          <div class="headline">
+          <h1>Log In</h1>
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Email" required="" id="email">
+          </div>
+
+          <div class="form-group">
+              <input type="password" placeholder="Password" required="" id="password">
+          </div>
+
+          <button type="submit" class="btn" id="loginbtn"><i class="fa fa-toggle-on"></i> &nbsp;LOG IN</button><hr>
+
+          <div class="account-exist">
+          <a href="#" id="forgPass">Forgot your password?</a><br>
+          Don't have an account yet? <a href="#" class="loginswp">Sign Up</a><br>
+          <span class="special" style="text-align: center;">or</span>
+          </div>
+          <div class="social-login">
+            <button class="btn gsocup"><i class="fab fa-google"></i> &nbsp; &nbsp; Sigin in with Google</button>
+            <button class="btn asocup"><i class="fab fa-apple"></i> &nbsp; &nbsp; Sigin in with Apple</button>
+            <button class="btn fsocup"><i class="fab fa-facebook"></i> &nbsp; &nbsp; Sigin in with FaceBook</button>
+          </div>
+
+      </div>
+    </form>
+</div>
+
+
+<div class="alljsfiles">
+<!--? Vendor JS Files
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/jquery/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/jquery/listnav/jquery-listnav.min.js"></script>
+<script src="assets/vendor/popper/popper292min.js"></script>
+
+<!--? Main JS File
+<!--? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+<script src="assets/js/main.js"></script>
+</div>
+
+</body>
+</html>
