@@ -1,78 +1,79 @@
-
 /*? === Google Font ===*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 /*? === Variables Define ===*/
-:root{
-    --primary-color:#255cd3;
-    --accent-color: #88c5ff;
-    --white-color:#fff;
-    --black-color:#3C4A57;
-    --light-gray:#e8f1ff;
+:root {
+  --primary-color: #255cd3;
+  --accent-color: #88c5ff;
+  --white-color: #fff;
+  --black-color: #3c4a57;
+  --light-gray: #e8f1ff;
 }
 
 /*? === Body CSS ===*/
-body{
-    margin-top: 60px;
-    text-align: center;
+body {
+  margin-top: 60px;
+  text-align: center;
 }
 
 /*? === Other general CSS ===*/
 .inActive {
-    display: none;
+  display: none;
 }
 .card {
-    padding: 5px;
+  padding: 5px;
 }
 
 .card img {
-    width:  auto;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .postercontainer {
-    padding-top: 150%; /* 3:2 Aspect Ratio (divide 2 by 3 = 0.6666)  */
-    background-color: var(--black-color);
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    margin: auto;
-    align-items: center;
+  padding-top: 150%; /* 3:2 Aspect Ratio (divide 2 by 3 = 0.6666)  */
+  background-color: var(--black-color);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: auto;
+  align-items: center;
 }
 
-.home .btn, .addpg .btn, .detpg .btn{
-    width:100%;
-    font-size: 14px;
-    font-weight: 500;
-    color:var(--white-color);
-    background-color: var(--primary-color);
-    border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+.home .btn,
+.addpg .btn,
+.detpg .btn {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .filtertag {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .filtertag:hover {
-    background-color: var(--black-color);
-    color: var(--white-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 .filtertag.active {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
-    background-color: var(--black-color);
-    transition: all 0.4s ease-in-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--black-color);
+  transition: all 0.4s ease-in-out;
 }
 
 /** #################################################################################
@@ -80,93 +81,93 @@ body{
 /** ################################################################################# */
 
 nav.navbar.navbar-expand-sm {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
-    background-color: var(--primary-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  background-color: var(--primary-color);
 }
 nav.navbar a.navbar-brand {
-    font-weight: 700;
-    color: var(--white-color);
-    /* padding-left: 5px; */
+  font-weight: 700;
+  color: var(--white-color);
+  /* padding-left: 5px; */
 }
 nav.navbar a.navbar-brand img {
-    object-fit: cover;
-    margin: 0 5px 0 0;
-    border-radius: 4px;
-    /* padding-left: 5px; */
+  object-fit: cover;
+  margin: 0 5px 0 0;
+  border-radius: 4px;
+  /* padding-left: 5px; */
 }
 .navbar ul.nav a {
-    margin: 5px;
-    padding: 5px 10px;
-    color: var(--white-color);
-    border: 2px solid var(--white-color);
-    border-radius: 5px;
-    display: block;
+  margin: 5px;
+  padding: 5px 10px;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  border-radius: 5px;
+  display: block;
 }
 .navbar ul.nav a:hover {
-    background-color: var(--black-color);
-    text-decoration: none;
+  background-color: var(--black-color);
+  text-decoration: none;
 }
 
 /** #################################################################################
 /** Home page setup
 /** ################################################################################# */
 
-.home .jumbotron{
-    padding: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    background-color: var(--light-gray);
+.home .jumbotron {
+  padding: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--light-gray);
 }
 .home .filtertag {
-    font-weight: 500;
-    font-size: .8em;
-    padding: 5px 5px;
-    margin: 2px auto;
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 5px 5px;
+  margin: 2px auto;
 }
 .showlist .card {
-    border: none;
+  border: none;
 }
 .showlist .card-title {
-    font-size: 18px;
+  font-size: 18px;
 }
 .showlist .card-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 .showlist {
-    margin: auto;
+  margin: auto;
 }
 .showlist .card-body .btn {
-    font-size: 14px;
+  font-size: 14px;
 }
 .home .card-header {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    padding-top: 20px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding-top: 20px;
 }
 .home .card-header h4 {
-    font-weight: 700;
-    float: left;
-    padding-top: 5px;
+  font-weight: 700;
+  float: left;
+  padding-top: 5px;
 }
 .home .card-header input {
-    float: right;
-    border-radius: 0px;
-    border: none;
-    width: 25%;
-    height: 100%;
-    font-size: 20px;
+  float: right;
+  border-radius: 0px;
+  border: none;
+  width: 25%;
+  height: 100%;
+  font-size: 20px;
 }
 .home .card-header input:focus {
-    outline: none ;
-    border-bottom: 1px solid var(--primary-color);
-    box-shadow: 0 1px 0 0 var(--primary-color);
-    transition: all 0.2s ease-in-out;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+  transition: all 0.2s ease-in-out;
 }
 .home .card-header input::placeholder {
-    text-align: right;
-  }
+  text-align: right;
+}
 .home .card-header input:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 /** #################################################################################
@@ -174,171 +175,169 @@ nav.navbar a.navbar-brand img {
 /** ################################################################################# */
 
 .addpg .modal-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin: auto;
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto;
 }
-.addpg .modal-body input:focus{
-    outline: none;
-    border: 1px solid var(--primary-color);
-    box-shadow: none;
-    transition: all 0.8s ease-in-out;
+.addpg .modal-body input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+  transition: all 0.8s ease-in-out;
 }
 .addpg .modal-content {
-    border: none;
+  border: none;
 }
 .addpg.container {
-    padding-top: 40px;
-    width: 50%;
-    min-width: 400px;
- }
+  padding-top: 40px;
+  width: 50%;
+  min-width: 400px;
+}
 
- /** #################################################################################
+/** #################################################################################
 /** Details Page setup
 /** ################################################################################# */
 .detpg {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 .descont .modal-title {
-    font-weight: 700;
+  font-weight: 700;
 }
 .descont .card-body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .descont .card-body a {
-    width: 100%;
-    margin-top: 5px;
+  width: 100%;
+  margin-top: 5px;
 }
 .detpg .epicont .card-header {
-    background-color: transparent;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-    font-size: 20px;
-    font-weight: 500;
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .detpg .epicont h5.card-text {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 .epicont .container {
-    border: none;
-    border-left: 5px solid var(--primary-color);
-    padding: 0px 10px;
-    margin: 10px;
-    font-size: 14px;
-    position: relative;
+  border: none;
+  border-left: 5px solid var(--primary-color);
+  padding: 0px 10px;
+  margin: 10px;
+  font-size: 14px;
+  position: relative;
 }
 
 .epicont .container .epino {
-    /* float: right; */
-    position: absolute;
-    top: 0px;
-    right: 40px;
+  /* float: right; */
+  position: absolute;
+  top: 0px;
+  right: 40px;
 }
 /** #################################################################################
 /** Login and Signup Page setup
 /** ################################################################################# */
 
-.userform{
-    /* padding:50px 25px 0;  */
-    max-width:668px; 
-    width:100%; 
-    margin:auto;
+.userform {
+  /* padding:50px 25px 0;  */
+  max-width: 668px;
+  width: 100%;
+  margin: auto;
 }
-.userform .headline{
-    text-align: center;
-    padding:48px;
+.userform .headline {
+  text-align: center;
+  padding: 48px;
 }
-.userform .headline h1{
-    font-weight: 700;
-    font-size: 40px;
-    /* line-height: 52px; */
+.userform .headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  /* line-height: 52px; */
 }
-.userform .form{
-    max-width:350px;
-    width:100%;
-    margin:auto;
+.userform .form {
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
 }
-.userform input{
-    /* display:block; */
-    font-size: 16px;
-    /* line-height: 24px; */
-    /* letter-spacing: -0.1px; */
-    padding:11px 15px;
-    height:48px;
-    border-radius: 5px;
-    color:var(--black-color);
-    border:1px solid var(--light-gray);
-    box-shadow: none;
-    width:100%;
-    margin-bottom: 5px;
+.userform input {
+  /* display:block; */
+  font-size: 16px;
+  /* line-height: 24px; */
+  /* letter-spacing: -0.1px; */
+  padding: 11px 15px;
+  height: 48px;
+  border-radius: 5px;
+  color: var(--black-color);
+  border: 1px solid var(--light-gray);
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 5px;
 }
-.userform input:focus{
-    outline:none;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 7px var(--primary-color);
-    transition: all 0.4s ease-in-out;
+.userform input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 7px var(--primary-color);
+  transition: all 0.4s ease-in-out;
 }
-.userform input::placeholder{
-    color:var(--black-color);
-    font-weight: 400;
-    font-size: 14px;
-    
+.userform input::placeholder {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 14px;
 }
-.userform .btn{
-    width:100%;
-    margin:5px 0 5px;
-    font-size: 14px;
-    /* line-height: 22px; */
-    font-weight: 500;
-    /* padding:12px 29px; */
-    height:48px;
-    /* text-transform: uppercase; */
-    color:var(--white-color);
-    background-color: var(--primary-color);
-    border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+.userform .btn {
+  width: 100%;
+  margin: 5px 0 5px;
+  font-size: 14px;
+  /* line-height: 22px; */
+  font-weight: 500;
+  /* padding:12px 29px; */
+  height: 48px;
+  /* text-transform: uppercase; */
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
 }
-.userform .btn:focus{
-    outline:none;
+.userform .btn:focus {
+  outline: none;
 }
 /* .userform .btn:hover{
     color: var(--white-color);
 } */
-.userform .account-exist{
-    /* color:var(--black-color); */
-    /* border-top:1px solid var(--light-gray); */
-    padding-bottom: 15px;
-    text-align: center;
+.userform .account-exist {
+  /* color:var(--black-color); */
+  /* border-top:1px solid var(--light-gray); */
+  padding-bottom: 15px;
+  text-align: center;
 }
-.userform .account-exist a{
-    color:var(--primary-color);
+.userform .account-exist a {
+  color: var(--primary-color);
 }
 .userform ul {
-    font-size: 14px;
-    border-radius: 5px;
-} 
+  font-size: 14px;
+  border-radius: 5px;
+}
 
-.userform .inActive{
-    display:none;
+.userform .inActive {
+  display: none;
 }
-.userform .active{
-    display:block;
+.userform .active {
+  display: block;
 }
-.signup div{
-    padding-bottom: 5px;
+.signup div {
+  padding-bottom: 5px;
 }
 
 /*? The Stupid little "or break" in Sign up page */
 span.special:after,
-span.special:before{
-    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
+span.special:before {
+  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
 }
-
 
 /*? #################################################################################
 /*? Discarded Backup
