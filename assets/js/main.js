@@ -388,9 +388,3 @@ $(document).on('click touchend', '.gsocup, .asocup, .fsocup', function () {
   )
   return false
 })
-const mname = 'Joe'
-mname = 'mary'
-var saf = asdf
-var saf = false
-let miro = 123
-let miro = 12
